@@ -1,6 +1,6 @@
-$sycamore-green: #47af39;
+$sycamore-green: rgb(71, 175, 57);
 
 $link-color: $sycamore-green;
 $btn-primary-color: $sycamore-green;
-$sidebar-color: lighten($sycamore-green, 60%);
+$sidebar-color: rgba($sycamore-green, 0.5);
 
