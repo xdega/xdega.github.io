@@ -1,5 +1,4 @@
- ---
-  ---
+$sycamore-green: #005f2e;
 
-  @import "{{ site.theme }}";
-  $link-color: #005f2e;
+$link-color: $sycamore-green;
+$btn-primary-color: $sycamore-green;
