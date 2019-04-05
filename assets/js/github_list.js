@@ -21,7 +21,7 @@ $(function() {
                     "'><i class='fa fa-link' aria-hidden='true'></i></a>" +
                     "<span class='name'>" + 
                     element.name + 
-                    "</span><span class='desription'>" +
+                    "</span><span class='description'>" +
                     description + 
                     "</span></div>"
                 );

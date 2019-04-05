@@ -15,25 +15,30 @@ header {
 nav {
     .active {
         border-bottom: 3px solid;
+        pointer-events: none;
     }
+
     ul {
         margin: 0;
         padding: 0;
         list-style: none;
+   
         li {
-            border-bottom: 10px solid rgba(255,255,255,0%);
-            transition: 0.25s border;
             display: inline;
+            
             &:not(:last-child) {
                 margin-right: 30px;
             }
-            &:hover {
-                border-bottom: 3px solid;
-            }
+        
             a {
                 text-decoration: none;
                 font-size: 1.1rem;
                 color: $color-primary;
+                border-bottom: 10px solid rgba(255,255,255,0%);
+                transition: 0.25s border;
+                &:hover {
+                    border-bottom: 3px solid;
+                }
             }
         }
     }

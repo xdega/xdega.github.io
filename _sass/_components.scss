@@ -1,4 +1,4 @@
-#repo_list {
+#github_list {
     span {
         display: block;
         padding: 5px;
@@ -7,8 +7,19 @@
     .url_icon, .name {
         display: inline-block;
     }
-
+    
+    .name {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+    }
+    
     .repo_item {
-        border-bottom: 1px solid #222;
+        padding-bottom: 2rem;
+    }
+
+    .repo_link {
+        border-bottom: none;
     }
 }
