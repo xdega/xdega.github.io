@@ -1,0 +1,14 @@
+#repo_list {
+    span {
+        display: block;
+        padding: 5px;
+    }
+
+    .url_icon, .name {
+        display: inline-block;
+    }
+
+    .repo_item {
+        border-bottom: 1px solid #222;
+    }
+}
