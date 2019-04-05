@@ -2,7 +2,7 @@ $(function() {
     const settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://api.github.com/users/xdega/repos",
+        "url": "https://api.github.com/users/xdega/repos?type=owner&&sort=updated",
         "method": "GET"
     }
 
