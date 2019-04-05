@@ -10,7 +10,6 @@ $(function() {
         let items = [];
 
         $(data).each(function(index, element) {
-            items.push($('<div/>'));
             let description = String(element.description);
             if(description.indexOf('#portfolio') !== -1) {
 
