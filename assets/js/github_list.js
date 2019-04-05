@@ -18,10 +18,10 @@ $(function() {
                 items.push(
                     "<div class='repo_item'><a class='repo_link' href='" +
                     element.html_url +
-                    "'><i class='fa fa-link' aria-hidden='true'></i></a>" +
+                    "' target='_blank'><i class='fa fa-link' aria-hidden='true'></i>" +
                     "<span class='name'>" + 
                     element.name + 
-                    "</span><span class='description'>" +
+                    "</span></a><span class='description'>" +
                     description + 
                     "</span></div>"
                 );
