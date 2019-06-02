@@ -1,0 +1,28 @@
+.form-group {
+    font-size: 14px;
+    text-align: left;
+    padding-bottom: 10px;
+    label {
+        vertical-align: top;
+        min-width: 100px;
+        display: inline-block;
+    }
+    label, #send {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    textarea#message {
+        resize: none;
+        width: 450px;
+        height: 150px;
+    }
+    select, input, #send {
+        width: 150px;
+    }
+    #send {
+        margin-left: 104px;
+        height: 30px;
+        border: none;
+    }
+}
