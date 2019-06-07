@@ -1,28 +1,42 @@
 .form-group {
-    font-size: 14px;
+    text-align: center !important;
     text-align: left;
     padding-bottom: 10px;
-    label {
-        vertical-align: top;
-        min-width: 100px;
-        display: inline-block;
-    }
-    label, #send {
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 14px;
-    }
+
     textarea#message {
         resize: none;
         width: 450px;
         height: 150px;
     }
-    select, input, #send {
-        width: 150px;
+    input {
+        height: 20px;
+        padding: 4px;
+        width: 448px;
+    }
+    select {
+        height: 25px;
+        width: 456px;
+    }
+    textarea {
+        padding: 2px;
+    }
+    select, input, textarea {
+        border: 0px solid #fff;
+        font-size: 17px;
+        font-family: $font-stack-body;
     }
     #send {
-        margin-left: 104px;
+        transition: 0.25s background-color;
+        text-transform: uppercase;
+        background-color: #333;
+        color: #fff;
+        font-size: 17px;
+        width: 455px;
         height: 30px;
         border: none;
+    }
+    #send:hover {
+        transition: 0.25s background-color;
+        background-color: #111;
     }
 }

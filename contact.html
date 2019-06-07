@@ -9,19 +9,19 @@ permalink: /contact/
         let message = $("[name='message']").val();
 
         e.preventDefault();
+        console.log("Sending Email to Liam Hockley...");
         // AJAX request to LiamAPI here.
+        console.log("Thank You!");
     }
 </script>
 <article>
     <p>Go ahead, contact me...</p>
     <form id="contact">
         <div class="form-group">
-            <label for="sender">Your Email</label>
-            <input name="sender">
+            <input name="sender" placeholder="your-email-address@example.com">
         </div>
         <div class="form-group">
-            <label for="subject">Subject</label>
-            <select name="subject">
+            <select class="select-wrapper" name="subject">
                 <option value="general">General Inquiry</option>
                 <option value="work">Work Opportunity</option>
                 <option value="feedback">Website Feedback</option>
@@ -29,7 +29,6 @@ permalink: /contact/
             </select>
         </div>
         <div class="form-group">
-            <label for="message">Message</label>
             <textarea name="message" id="message"></textarea>
         </div>
         <div class="form-group">
