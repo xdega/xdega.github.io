@@ -20,6 +20,7 @@ permalink: /contact/
             type: 'GET',
             success: function() {
                 console.log("Thank You!");
+                window.alert("Thank You for Your Message!")
                 window.location.href = "/";
             },
             error: function(error) {
@@ -30,7 +31,6 @@ permalink: /contact/
     }
 </script>
 <article>
-    <p>Go ahead, contact me...</p>
     <form id="contact">
         <div class="form-group">
             <input name="sender" placeholder="your-email-address@example.com">
