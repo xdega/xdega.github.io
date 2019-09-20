@@ -2,6 +2,52 @@
 layout: default
 permalink: /contact/
 ---
+<script>
+    function sendEmail(e) {
+        const subject = $("[name='subject']").val();
+        const sender = $("[name='sender']").val();
+        const message = $("[name='message']").val();
+
+        e.preventDefault();
+
+        console.log("Sending Email to Liam Hockley...");
+        let url = "https://liamapi.herokuapp.com/api/email?"
+        url += "title=" + subject
+        url += "&message=" + message
+        url += "&sender=" + sender
+        $.ajax({
+            url: url,
+            type: 'GET',
+            success: function() {
+                console.log("Thank You!");
+                window.location.href = "/";
+            },
+            error: function(error) {
+                console.log("ERROR:");
+                console.log(error);
+            }
+        });
+    }
+</script>
 <article>
     <p>Go ahead, contact me...</p>
+    <form id="contact">
+        <div class="form-group">
+            <input name="sender" placeholder="your-email-address@example.com">
+        </div>
+        <div class="form-group">
+            <select class="select-wrapper" name="subject">
+                <option value="general">General Inquiry</option>
+                <option value="work">Work Opportunity</option>
+                <option value="feedback">Website Feedback</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <textarea name="message" id="message"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="send" onClick="sendEmail(event);">Send</button>
+        </div>
+    </form>
 </article>
