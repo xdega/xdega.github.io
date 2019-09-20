@@ -4,14 +4,29 @@ permalink: /contact/
 ---
 <script>
     function sendEmail(e) {
-        let subject = $("[name='subject']").val();
-        let sender = $("[name='sender']").val();
-        let message = $("[name='message']").val();
+        const subject = $("[name='subject']").val();
+        const sender = $("[name='sender']").val();
+        const message = $("[name='message']").val();
 
         e.preventDefault();
+
         console.log("Sending Email to Liam Hockley...");
-        // AJAX request to LiamAPI here.
-        console.log("Thank You!");
+        let url = "https://liamapi.herokuapp.com/api/email?"
+        url += "title=" + subject
+        url += "&message=" + message
+        url += "&sender=" + sender
+        $.ajax({
+            url: url,
+            type: 'GET',
+            success: function() {
+                console.log("Thank You!");
+                window.location.href = "/";
+            },
+            error: function(error) {
+                console.log("ERROR:");
+                console.log(error);
+            }
+        });
     }
 </script>
 <article>
