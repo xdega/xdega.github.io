@@ -10,6 +10,12 @@ permalink: /contact/
 
         e.preventDefault();
 
+        // Let's break out if any field is empty
+        if(!subject || !sender || ! message) {
+            window.alert("Make sure all fields are populated");
+            return;
+        }
+
         console.log("Sending Email to Liam Hockley...");
         let url = "https://liamapi.herokuapp.com/api/email?"
         url += "title=" + subject
