@@ -4,6 +4,8 @@ permalink: /contact/
 ---
 <script>
     function sendEmail(e) {
+        $('#send').attr('diabled', true);
+
         const subject = $("[name='subject']").val();
         const sender = $("[name='sender']").val();
         const message = $("[name='message']").val();
@@ -16,6 +18,11 @@ permalink: /contact/
             return;
         }
 
+        // Activate Loader
+        console.log("Activate Loader");
+        $("#loading").show();
+
+        // Send Email
         console.log("Sending Email to Liam Hockley...");
         let url = "https://liamapi.herokuapp.com/api/email?"
         url += "title=" + subject
@@ -25,13 +32,21 @@ permalink: /contact/
             url: url,
             type: 'GET',
             success: function() {
+                // Deactivate Loader
+                $("#loading").hide();
+
                 console.log("Thank You!");
-                window.alert("Thank You for Your Message!")
+                window.alert("Thank you for your message!")
+
+                // You are done here. Redirect to root page.
                 window.location.href = "/";
             },
             error: function(error) {
-                console.log("ERROR:");
+                // Deactivate Loader
+                $("#loading").hide();
+
                 console.log(error);
+                window.alert("There was an error sending your message!")
             }
         });
     }
@@ -57,3 +72,6 @@ permalink: /contact/
         </div>
     </form>
 </article>
+<div id="loading" style="display: none;">
+    <div id="message">Sending Email...</div>
+</div>
