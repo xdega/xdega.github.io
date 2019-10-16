@@ -6,6 +6,10 @@ $(function() {
         "method": "GET"
     }
 
+    // Activate Loader
+    console.log("Activate Loader");
+    $("#loading").show();
+
     $.ajax(settings).done(function (data) {
         let items = [];
 
@@ -28,6 +32,10 @@ $(function() {
 
             }
         });
+
+        // Deactivate Loader
+        console.log("Deactivate Loader");
+        $("#loading").hide();
 
         $('#github_list').append.apply($('#github_list'), items);
     });
