@@ -22,7 +22,7 @@ $(function() {
                 items.push(
                     "<div class='repo_item'><a class='repo_link' href='" +
                     element.html_url +
-                    "' target='_blank'><i class='fa fa-link' aria-hidden='true'></i>" +
+                    "' target='_blank'><i class='fab fa-github' aria-hidden='true'></i>" +
                     "<span class='name'>" + 
                     element.name + 
                     "</span></a><span class='description'>" +
