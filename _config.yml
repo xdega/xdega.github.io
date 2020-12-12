@@ -1,11 +1,11 @@
 # Site settings
-title: Liam Hockley
+title: "Liam Hockley"
 email: mpzoyyjk # Formspree ID
 url: https://www.liamhockley.me
 description: "Personal portfolio for passionate Full Stack Web Developer, Liam Hockley."
 keywords: "web, developer, full stack, front-end, php, vue, react"
 skills: "Full Stack Web Developer - Passionte Code Nerd"
-meta_author: Liam Hockley
+meta_author: "Liam Hockley"
 
 # Google webmaster tools
 google_verify:
