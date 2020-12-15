@@ -1,2 +1,66 @@
-sass:
-    sass_dir: _sass
+# Site Settings
+title: "Liam Hockley"
+email: mpzoyyjk # Formspree
+url: https://www.liamhockley.me
+description: "Personal portfolio for passionate Full Stack Web Developer, Liam Hockley."
+keywords: "web, developer, full stack, front-end, php, vue, react"
+skills: "Full Stack Web Developer - Passionte Code Nerd"
+meta_author: "Liam Hockley"
+
+google_verify:
+bing_verify:
+
+# Contact Form:
+# - static : pass through formspree.io to validate email sending
+contact: static
+
+# Color Settings (hex-codes without the leading hash-tag)
+color:
+  primary: "3299BB"
+  primary-rgb: "101,201,255"
+  nav-link: "65C9FF"
+  secondary: "2C3E50"
+  secondary-dark: "233140"
+
+# Footer Headings
+footer:
+  copyright: Liam Hockley
+  location: Location
+  social: Social
+  activities: Activities
+
+# Social Networks
+social:
+  - title: linkedin
+    url: https://www.linkedin.com/in/liamhockley
+  - title: github
+    url: https://www.github.com/xdega
+  - title: twitter
+    url: https://www.twitter.com/xdegathenerd
+  - title: flickr
+    url: https://www.flickr.com/people/liamhockley/
+
+# Postal Address
+address:
+  - line: Mid Wilshire
+  - line: Los Angeles, CA 90036
+
+# Activities Content
+activities: |
+  <a href="https://www.drupal.org/project/decoupled_menus_initiative" target="_blank">Drupal Decoupled Menus Initiative</a>
+  <br>
+  <a href="https://www.drupal.org/u/lhockley" target="_blank">Drupal.org Profile</a>
+  <br>
+  Hacktoberfest (2018, 2019, 2020)
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+#for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: ""

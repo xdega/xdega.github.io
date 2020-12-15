@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<head>
-    <title>LIAM HOCKLEY</title>
-    <link rel="stylesheet" href="/assets/css/app.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
-</head>
-<body>
+<html>
+    {% include head.html %}
+    <body id="page-top" class="index">
+    {% include nav.html %}
     {% include header.html %}
-    {% include navigation.html %}
-    {{ content }}
-</body>
+    {% include portfolio_grid.html %}
+    {% include about.html %}
+
+    {% if site.contact == "static" %}
+    {% include contact_static.html %}
+    {% elsif site.contact == "disqus" %}
+    {% include contact_disqus.html %}
+    {% else %}
+    {% include contact.html %}
+    {% endif %}
+
+    {% include footer.html %}
+    {% include modals.html %}
+    {% include js.html %}
+    </body>
+</html>
