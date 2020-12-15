@@ -21,13 +21,15 @@
                             <ul class="list-inline item-details">
                                 {% if post.live-url %}
                                     <li>Live Project:
-                                        <strong><a href="http://startbootstrap.com">{{ post.live-url }}</a>
+                                        <strong>
+                                            <a href="{{ post.live-url }}" target="_blank">{{ post.live-url }}</a>
                                         </strong>
                                     </li>
                                 {% endif %}
                                 {% if post.git-url %}
                                     <li>Source Code:
-                                        <strong><a href="http://startbootstrap.com">{{ post.git-url}}</a>
+                                        <strong>
+                                            <a href="{{ post.git-url }}" target="_blank">{{ post.git-url }}</a>
                                         </strong>
                                     </li>
                                 {% endif %}
