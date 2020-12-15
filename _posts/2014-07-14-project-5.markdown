@@ -1,11 +1,16 @@
 ---
 layout: default
 modal-id: 5
-date: 2014-07-14
-img: safe.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+img: cabin.png
+alt: "Palm Business Center"
+live-url: "https://pbs.webfresh.dev/"
+git-url: "https://github.com/xdega/wordpress-theme-pbc"
+description: |
+  <strong>Palm Business Center</strong> is a freelance project for a client in Palm, PA. 
+  The current website was over 10 years old, lacked mobile support, and was no longer being 
+  maintained. I determined that WordPress would be ideal for this project due to the scope 
+  and scale. I opted to use Twig for cleaner templates, via a plugin called Timber. I also 
+  implemented a modern JS/CSS workflow to enable cleaner source code for assets and optimized 
+  output.
 ---
+

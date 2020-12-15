@@ -1,11 +1,11 @@
 ---
 layout: default
 modal-id: 2
-date: 2014-07-17
-img: cake.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+img: cabin.png
+alt: "Drupal Char Count"
+live-url: "https://www.drupal.org/project/charcount"
+description: |
+  <strong>Drupal Char Count</strong> is my first official open-source contributed module, submitted to the Drupal project. 
+  While the functionality of this module is relatively simple, it allowed me to become familiar with the 
+  open-source contribution process that is facilitated by Drupal.org.
 ---

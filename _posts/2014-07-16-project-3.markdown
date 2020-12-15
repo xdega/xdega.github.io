@@ -1,11 +1,14 @@
 ---
 layout: default
 modal-id: 3
-date: 2014-07-16
-img: circus.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+img: cabin.png
+alt: "Snapbook"
+live-url: "https://snapbook.app"
+git-url: "https://github.com/xdega/snapbook.app"
+description: |
+  I built <strong>Snapbook</strong> as a place to freely share my photography in full quality while
+  delving into some new technologies. This project was built using React, along with Firebase Auth, 
+  Realtime Database, Storage, and Hosting. TailwindCSS was used to facilitate a declarative approach 
+  to CSS styling. This was my first foray into the wonderful world of React and it laid a firm foundation 
+  in my understanding of frontend JavaScript frameworks.
 ---

@@ -1,11 +1,14 @@
 ---
 layout: default
 modal-id: 6
-date: 2014-07-15
-img: submarine.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+img: cabin.png
+alt: "Webfresh Development"
+live-url: "https://www.webfreshdev.com"
+git-url: "https://github.com/xdega/webfresh-v2"
+description: |
+  <strong>Webfresh</strong> was an experiment in branding, as well as a project that allowed me to 
+  dive deep into a full, thoughtful, design process, and to continue to hone and sharpen my 
+  skills. Beginning with Figma, I created a mobile-first design mockup, then an HTML prototype, 
+  finally a full frontend build in React. The backend is powered by a JSON:API rest API, served
+  by Drupal.
 ---
