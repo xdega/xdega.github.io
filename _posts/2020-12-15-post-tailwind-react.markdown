@@ -1,0 +1,10 @@
+---
+layout: default
+modal-id: 4
+img: tw-postcss-react.png
+alt: "Tailwind, PostCSS, React"
+title: "Tailwind, PostCSS, React"
+git-url: "https://github.com/xdega/tailwind-postcss-react"
+description: "I often begin new projects with a reasonable boilerplate. This project is an open-source    
+  Github template repository that I built to facilitate the rapid creation of new reactive frontend applications with React. This includes additional tooling for Tailwind, Webpack, and PostCSS. This supports a clean asset pipeline with a delarative approach to CSS styling via Tailwind."
+---

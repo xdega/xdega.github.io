@@ -1,0 +1,16 @@
+---
+layout: default
+modal-id: 3
+img: pbc.png
+alt: "Palm Business Center"
+title: "Palm Business Center"
+live-url: "https://pbs.webfresh.dev/"
+git-url: "https://github.com/xdega/wordpress-theme-pbc"
+description: "<strong>Palm Business Center</strong> is a freelance project for a client in Palm, PA. 
+  The current website was over 10 years old, lacked mobile support, and was no longer being 
+  maintained. I determined that WordPress would be ideal for this project due to the scope 
+  and scale. I opted to use Twig for cleaner templates, via a plugin called Timber. I also 
+  implemented a modern JS/CSS workflow to enable cleaner source code for assets and optimized 
+  output."
+---
+
