@@ -1,18 +1,57 @@
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    {% feed_meta %}
-    {% seo %}
-    <link rel="stylesheet" href="/css/site.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    {% feed_meta %} {% seo %}
+    <link rel="stylesheet" href="/css/site.css" />
   </head>
-  <body>
-    <section>
-      {{ content }}
-    </section>
+  <body
+    class="flex flex-col min-h-screen bg-white bg-gradient-to-r from-blue-100 to-blue-300"
+  >
+    <nav class="mx-auto container lg:py-6 px-4 xl:px-12 2xl:px-4 relative">
+      <div class="w-full flex justify-between items-center">
+        <a class="font-bold text-2xl" href="#">LIAM HOCKLEY</a>
+        <ul class="items-center hidden lg:flex">
+          <li
+            class="uppercase text-lg leading-none hover:text-blue-800 text-gray-900"
+          >
+            <a href="#">About</a>
+          </li>
+          <li
+            class="uppercase pl-8 text-lg leading-none hover:text-blue-800 text-gray-900"
+          >
+            <a href="#">Projects</a>
+          </li>
+          <li
+            class="uppercase pl-8 text-lg leading-none hover:text-blue-800 text-gray-900"
+          >
+            <a href="#">Links</a>
+          </li>
+          <li
+            class="uppercase pl-8 text-lg leading-none hover:text-blue-800 text-gray-900"
+          >
+            <!-- Link to PDF file -->
+            <a href="#">Resume</a>
+          </li>
+          <li
+            class="uppercase pl-8 text-lg leading-none hover:text-blue-800 text-gray-900"
+          >
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="flex-1">
+      <!-- hero section with personal statement -->
+      <!-- Projects (loop through posts)-->
+      <!-- Links (external links to various platforms like Drupal.org, Code Wars, Github/Gist, etc)-->
+      <!-- Contact Form-->
+      
+      <section class="mx-auto container lg:py-6 px-4 xl:px-12 2xl:px-4 flex flex-col">{{ content }}</section>
 
-    {% if jekyll.environment == 'production' %}
-      {% include analytics.html %}
-    {% endif %}
+    </main>
+
+    {% if jekyll.environment == 'production' %} {% include analytics.html %} {%
+    endif %}
   </body>
 </html>
