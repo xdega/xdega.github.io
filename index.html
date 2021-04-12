@@ -1,9 +1,14 @@
 ---
 layout: default
 ---
-
-<h1> Welcome to jekyll-tailwind-starter!</h1>
-
-{% for post in site.posts %}
-  <a href="{{ post.url }}">{{ post.title }}</a>
-{% endfor %}
+  <blockquote class="hero-quote border-l-4 pl-3 border-blue-400 text-gray-500">
+    As a coder, I enjoy working on diverse projects -- keen to brainstorm the cleanest or most visually elegant way to solve a problem, integrate feedback, or improve the user experience. As a strong team-player, I love to share ideas and assist my peers. Personable and down-to-earth, I thrive when given independent projects and in a collaborative environment.
+  </blockquote>
+  <!-- These posts will be "sections" of the site. The variable should probably be renamed -->
+  {% for post in site.posts %}
+    <section class="pt-3">
+      <header>{{ post.title }}</header>
+      <p>{{ post.content }}</p>
+    </section>
+    <pre>{{ post | inspect }}</pre>
+  {% endfor %}
