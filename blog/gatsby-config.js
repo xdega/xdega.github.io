@@ -7,9 +7,6 @@ module.exports = {
     },
     description: `Thoughts and ideas from the mind of a JS and PHP expert`,
     siteUrl: `https://liamhockley.me`,
-    social: {
-      github: `xdega`,
-    },
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -123,8 +120,7 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-gatsby-cloud`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
+    `gatsby-plugin-postcss`
   ],
 }

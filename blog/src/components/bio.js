@@ -29,7 +29,7 @@ const Bio = () => {
   const author = data.site.siteMetadata?.author
 
   return (
-    <div className="bio">
+    <div className="text-gray-400">
       {author?.summary && (
         <p>
           {author.summary}
