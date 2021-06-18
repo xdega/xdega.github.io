@@ -1,12 +1,12 @@
-// custom typefaces
+// Custom Typefaces
 import "typeface-montserrat"
 import "typeface-merriweather"
-// normalize CSS across browsers
-import "./src/normalize.css"
-// custom CSS styles
+
+// Inherited Custom CSS
 import "./src/style.css"
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"
 
+// TailwindCSS and Future Custom CSS
 import './src/styles/global.css';
