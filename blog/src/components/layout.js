@@ -34,7 +34,9 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer className="text-gray-400">
-        © {new Date().getFullYear()} | Liam Hockley
+        © {new Date().getFullYear()} | Liam Hockley 
+        |<a className="text-blue-400" href="mailto:contact@liamhockley.me"> contact@liamhockley.me </a>
+        |<a className="text-blue-400" target="_blank" href="https://github.com/xdega"> github.com/xdega</a>
       </footer>
     </div>
   );
