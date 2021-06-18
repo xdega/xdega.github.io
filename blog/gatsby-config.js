@@ -2,8 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Liam Hockley`,
     author: {
-      name: `Liam Hockley`,
-      summary: `Full Stack JS and PHP Engineer`,
+      name: `Liam Hockley`
     },
     description: `Thoughts and ideas from the mind of a JS and PHP expert`,
     siteUrl: `https://liamhockley.me`,
@@ -109,7 +108,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Liam Hockley: Personal Portfolio`,
+        name: `Liam Hockley's Personal Website`,
         short_name: `Liam Hockley`,
         start_url: `/`,
         background_color: `#ffffff`,
