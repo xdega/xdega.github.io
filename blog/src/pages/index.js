@@ -15,9 +15,7 @@ const BlogIndex = ({ data, location }) => {
         <Seo title="All posts" />
         <Bio />
         <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
+          No blog posts found.
         </p>
       </Layout>
     )
@@ -38,13 +36,13 @@ const BlogIndex = ({ data, location }) => {
                 itemScope
                 itemType="http://schema.org/Article"
               >
-                <header>
-                  <h2>
+                <header className="mb-2">
+                  <h2 className="text-2xl font-bold uppercase text-blue-400 mb-1">
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
+                  <div className="text-sm">{post.frontmatter.date}</div>
                 </header>
                 <section>
                   <p
@@ -54,6 +52,11 @@ const BlogIndex = ({ data, location }) => {
                     itemProp="description"
                   />
                 </section>
+                <footer className="pt-1">
+                    <Link to={post.fields.slug} itemProp="url">
+                      <span className="text-blue-400 font-bold" >[ ... ]</span>
+                    </Link>
+                </footer>
               </article>
             </li>
           )
@@ -79,7 +82,7 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "DD MMMM, YYYY")
           title
           description
         }

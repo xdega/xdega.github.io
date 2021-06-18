@@ -87,12 +87,6 @@ footer {
   padding: var(--spacing-6) var(--spacing-0);
 }
 
-hr {
-  background: var(--color-accent);
-  height: 1px;
-  border: 0;
-}
-
 /* Heading */
 
 h1,
@@ -266,17 +260,6 @@ a:focus {
 
 .post-list-item p {
   margin-bottom: var(--spacing-0);
-}
-
-.post-list-item h2 {
-  font-size: var(--fontSize-4);
-  color: var(--color-primary);
-  margin-bottom: var(--spacing-2);
-  margin-top: var(--spacing-0);
-}
-
-.post-list-item header {
-  margin-bottom: var(--spacing-4);
 }
 
 .header-link-home {

@@ -6,7 +6,7 @@ const Layout = ({ location, title, children }) => {
   const isRootPath = location.pathname === rootPath
   let header
 
-  const headerCSS = [
+  const css = [
     "font-bold",
     "bg-blue-300",
     "text-white",
@@ -20,11 +20,11 @@ const Layout = ({ location, title, children }) => {
   ];
 
   // Make the heading smaller for non home page links
-  (isRootPath) ? headerCSS.push('text-5xl') :  headerCSS.push('text-3xl');
+  (isRootPath) ? css.push('text-5xl') :  css.push('text-3xl');
 
 
   header = (
-    <h1 className={headerCSS.join(' ')}>
+    <h1 className={css.join(' ')}>
       <Link to="/">{title}</Link>
     </h1>
   );
@@ -33,7 +33,7 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
-      <footer>
+      <footer className="text-gray-400">
         © {new Date().getFullYear()} | Liam Hockley
       </footer>
     </div>
