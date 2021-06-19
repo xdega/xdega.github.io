@@ -8,3 +8,12 @@ hr {
   margin-top: 3em;
   margin-bottom: 3em;
 }
+
+/* Blog Post Styles (Markdown) */
+.blog-post p {
+  @apply my-2;
+}
+
+.blog-post h2 {
+  @apply mt-4 font-bold text-blue-400;
+}
