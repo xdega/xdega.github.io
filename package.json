@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Liam Hockley <contact@liamhockley.me>",
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
     "autoprefixer": "^10.2.6",
     "gatsby": "^3.7.2",
     "gatsby-plugin-feed": "^3.7.1",
@@ -25,10 +26,12 @@
     "gatsby-transformer-remark": "^4.4.1",
     "gatsby-transformer-sharp": "^3.7.1",
     "postcss": "^8.3.5",
+    "postcss-nested": "^5.0.5",
     "prismjs": "^1.23.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
+    "react-side-effect": "^2.1.1",
     "tailwindcss": "^2.2.2",
     "typeface-merriweather": "1.1.13",
     "typeface-montserrat": "1.1.13"

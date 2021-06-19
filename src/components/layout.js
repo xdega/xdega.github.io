@@ -2,9 +2,8 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
-  let header
+  const rootPath = `${__PATH_PREFIX__}/`;
+  const isRootPath = location.pathname === rootPath;
 
   const css = [
     "font-bold",
@@ -16,14 +15,14 @@ const Layout = ({ location, title, children }) => {
     "inline",
     "bg-gradient-to-r",
     "from-green-300",
-    "to-blue-400"
+    "to-blue-400",
+    "text-4xl"
   ];
 
-  // Make the heading smaller for non home page links
-  (isRootPath) ? css.push('text-5xl') :  css.push('text-3xl');
+  // Make the heading smaller for non home page links and small devices
+  (isRootPath) ? css.push('sm:text-5xl') :  css.push('sm:text-3xl');
 
-
-  header = (
+  const header = (
     <h1 className={css.join(' ')}>
       <Link to="/">{title}</Link>
     </h1>
@@ -31,7 +30,7 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
+      <header className="global-header text-center sm:text-left whitespace-nowrap">{header}</header>
       <main>{children}</main>
       <footer className="text-gray-400">
         © {new Date().getFullYear()} | Liam Hockley 

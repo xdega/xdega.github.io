@@ -3,13 +3,14 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Bio = () => {
   return (
-    <aside className="flex p-2 m-2 ml-0 pl-0 pt-0 mt-0 gap-4 items-center">
+    <aside className="flex p-2 m-2 ml-0 pl-0 pt-0 mt-0 gap-4 flex-col sm:flex-row">
       <StaticImage
-        className="flex-1"
+        className="hidden sm:block sm:flex-1"
         alt="My Profile Avatar" 
         src="../images/avatar.png"
         style={{ height: "100%", width: "100%"}}
         imgStyle={{ objectFit: "contain" }}
+        layout="fixed"
         height={100}
         width={100}
         quality={95}
@@ -20,7 +21,7 @@ const Bio = () => {
        * be overly "clever", when a simple solution is acceptable.
        */}
       <div className="flex-5 text-gray-500">
-        <p>Hello, I am a Software Engineer focused of Ed Tech and the WWW.</p>
+        <p className="mb-2 sm:mb-1">Hello, I am a Software Engineer focused of Ed Tech and the WWW.</p>
         <p>
           My primary expertise includes modern PHP and JavaScript, along with 
           numerous tools and technologies that saturate the world of Web 
