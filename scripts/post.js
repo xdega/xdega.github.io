@@ -15,8 +15,8 @@ console.log(`Generating new Blog Post, ${title} -> ${filepath}/index.md`);
 
 
 const content =`---
-title: ${title}
-date: "${time}
+title: "${title}"
+date: "${time}"
 description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo, 
 laboriosam, aliquam totam eius hic maiores voluptatem nam aut debitis sunt, illum 
 ea aspernatur ab error provident. Aut exercitationem, eos dolorem esse repellendus 
