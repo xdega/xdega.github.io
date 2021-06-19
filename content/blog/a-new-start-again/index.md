@@ -3,9 +3,9 @@ title: "A New Start... Again"
 date: "2021-06-19T06:15:04.841Z"
 description: "When it comes to personal websites, starting anew is often a good 
 thing. It allows you to dive into new tools and technologies, to discover new 
-workfows, and generally grow as an engineer. Since I have started a job job, and
-I am no longer in the middle of a grueling job search, it is time to revisit my 
-personal website."
+workflows, and generally grow as an engineer. Since I have started a new job and
+I am no longer in the middle of a grueling search for work, it is time to revisit 
+my personal website."
 ---
 
 ## What's Gone?
