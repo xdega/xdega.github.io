@@ -14,21 +14,21 @@ No more Jenkins template-based project. While I do have a reasonable mastery of
 Ruby (in particular Rails), I wanted to write something based on tools that I 
 personally prefer (JS, React).
 
-I am no longer deep in a job search, so gone is the portfolio and resume links 
+I am no longer deep in a job search, so gone are the portfolio and resume links 
 ...for now. I want to focus my efforts on building a single feature first, a Blog,
 and committing to it.
 
 ## What's New?
 
-When I rebuilt this website, I wanted to make sure it gave me a platform to truly
-put on display my growing mastery of modern JS and related tools and technologies. 
+When I rebuilt this website I wanted to make sure it gave me a platform to truly
+display my growing mastery of modern JS, with related tools and technologies. 
 
 I wanted to build something statically generated and opted to go with Gatsby for 
-the task, due to the vibrant plugin market and good support for markdown parsing.
+the task, due to it's vibrant plugin market and good support for markdown parsing.
 
-I had a lot of fun in the process. Much like with my previous Jenkins project, 
-all my blog posts are simply markdown files. This time I decided I wanted to 
-write a script to quickly generate a new blog post template.
+I had a lot of fun in this process. Much like with my previous Jenkins project, 
+all my blog posts are simply markdown files. This time, however, I decided I wanted 
+to write a script to quickly generate a new blog post boilerplate.
 
 ## What's Next?
 
@@ -40,6 +40,5 @@ Another thing I want to do here, is to finally dive into Unit Testing with Jest.
 At the moment I have a lot to learn in terms of how to write good unit tests, 
 in particular how to approach implementation of testing to an existing system. 
 
-Watch this space, as there will probably be a blog post (or a few) which talk
-about my adventures in Jest. 
-
+Watch this space as there will probably be a blog post (or a few) which talk
+about my adventures in Jest, etc. 
