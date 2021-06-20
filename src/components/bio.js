@@ -20,7 +20,7 @@ const Bio = () => {
        * some config, meta-data, etc. Sometimes it's really not worth trying to 
        * be overly "clever", when a simple solution is acceptable.
        */}
-      <div className="flex-5 text-gray-500">
+      <div className="flex-5 text-gray-500 sm:pl-4">
         <p className="mb-2 sm:mb-1">Hello, I am a Software Engineer focused of Ed Tech and the WWW.</p>
         <p>
           My primary expertise includes modern PHP and JavaScript, along with 
