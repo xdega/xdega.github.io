@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Bio = () => {
   return (
-    <aside className="flex p-2 m-2 ml-0 pl-0 pt-0 mt-0 gap-4 flex-col sm:flex-row">
+    <aside className="flex p-2 m-2 ml-0 pl-0 pt-0 mt-0 flex-col sm:flex-row">
       <StaticImage
         className="hidden sm:block sm:flex-1"
         alt="My Profile Avatar" 
