@@ -9,11 +9,11 @@ description: "Upon setting up this new Blog, one of my goals in moving the codeb
 To start with, I would like to applaud Gatsby for their excellent 
 [documentation](https://www.gatsbyjs.com/docs/how-to/testing/unit-testing/) on Unit Testing. It is one thing to include step-by-step that works flawlessly, but it is even more helpful when the documentation outlines the *why*.
 
-My setup for unit testing here follows all the reccomendations found in the documentation above, as I am a huge proponent of adhering to community standards when they are available. We can probably delve more into that topic in a future post. 
+My setup for unit testing here follows all the recommendations found in the documentation above, as I am a huge proponent of adhering to community standards when they are available. We can probably delve more into that topic in a future post. 
 
 ## The Test
 
-My first test was modified from the Gatsby documentation example. The documentation outlines how to test a Header component, but I do not have such a component (more on that in a minute)
+I modified my first test based on the example in the Gatsby documentation. The documentation outlines how to test a Header component, but I have no such component (more on that in a minute).
 
 ```js
 import React from "react"
@@ -32,12 +32,12 @@ describe("Bio", () => {
 
 This test simply renders my Bio component, creates a snapshot of it, and then all future tests will ensure that this snapshot will be how the component renders. This initial Regression Test is valuable, as it will ensure that the static side effects of this component will render as expected in the future.
 
-This test could definitely be modified to only look at the text content, which would make it less brittle. Currently, the snaptop contains the entire DOM structure, along with CSS class. I am not comfortable with this because it is likely I will make adjustments and tweaks to my Tailwind CSS classes in the future.
+This test could be modified to only look at the text content, which would make it less brittle. Currently, the snapshot contains the entire DOM structure, along with CSS class. I am not comfortable with this because it is likely I will make adjustments and tweaks to my Tailwind CSS classes in the future.
 
-For now, simply introducing this test has helped illumunate some issues with my code structure.
+For now, simply introducing this test has helped illuminate some issues with my code structure.
 
 ## Future Implications
 
-It is immediately clear to me after implementing this first test, that my layout is not atomic enough. I have a total of 3 components, one of which as an amalgamation of my Layout. 
+It is immediately clear to me after implementing this first test, that my layout is not atomic enough. I have a total of 3 components, one of which is a single component amalgamation of my layout. 
 
-As I build out this test suite, I should at least factor out my Layout to make use of encapsulated Head, Footer, and Nav components.
+As I build out this test suite, I should at least factor my layout into encapsulated Head, Footer, and Nav components.
