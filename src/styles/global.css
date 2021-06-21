@@ -17,3 +17,11 @@ hr {
 .blog-post h2 {
   @apply mt-4 font-bold text-blue-400;
 }
+
+.blog-post em, .blog-post a {
+  @apply text-blue-400;
+}
+
+.blog-post a {
+  text-decoration: underline;
+}
