@@ -21,7 +21,7 @@ const Bio = () => {
        * be overly "clever", when a simple solution is acceptable.
        */}
       <div className="flex-5 text-gray-500 sm:pl-4">
-        <p className="mb-2 sm:mb-1">Hello, I am a Software Engineer focused on Ed Tech and the WWW.</p>
+        <p data-testid="bio-intro" className="mb-2 sm:mb-1">Hello, I am a Software Engineer focused on Ed Tech and the WWW.</p>
         <p>
           My primary expertise includes modern PHP and JavaScript, along with 
           numerous tools and technologies that saturate the world of Web 

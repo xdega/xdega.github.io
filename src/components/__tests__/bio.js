@@ -1,12 +1,10 @@
 import React from "react"
-import renderer from "react-test-renderer"
-import Header from "../bio"
+import { render } from "@testing-library/react"
+import Bio from "../bio"
 
-describe("Bio", () => {
-  it("renders correctly", () => {
-    const tree = renderer
-      .create(<Header/>)
-      .toJSON()
-    expect(tree).toMatchSnapshot()
-  })
+test("bio renders intro text correctly", () => {
+  const { getByTestId } = render(<Bio />);
+
+  expect(getByTestId("bio-intro"))
+    .toHaveTextContent("I am a Software Engineer focused on Ed Tech and the WWW.")
 })
