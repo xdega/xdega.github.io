@@ -60,13 +60,14 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master",
+    "deploy": "npm run test && gatsby build --prefix-paths && gh-pages -d public -b master -m \"Deployment script\"",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "jest",
+    "ghphelp": "gh-pages -h",
     "generate:post": "node scripts/post.js"
   }
 }

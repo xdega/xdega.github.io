@@ -19,12 +19,12 @@ const Header = (props) => {
   ];
 
   // Make the heading smaller for non home page links and small devices
-  (isRootPath) ? css.push('sm:text-5xl') :  css.push('sm:text-3xl');
+  (isRootPath) ? css.push("sm:text-5xl") :  css.push("sm:text-3xl");
 
   return (
     <header className="global-header text-center sm:text-left whitespace-nowrap">
-    <h1 className={css.join(' ')}>
-      <Link data-testid="header" to="/">
+    <h1 data-testid="header-h1" className={css.join(' ')}>
+      <Link data-testid="header-link" to="/">
         {title}
       </Link>
     </h1>
