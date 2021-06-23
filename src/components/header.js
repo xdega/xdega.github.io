@@ -29,7 +29,7 @@ const Header = (props) => {
       </Link>
     </h1>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
