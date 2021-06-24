@@ -41,7 +41,7 @@ describe("<Footer /> component", () => {
     //
   });
 
-  it("should render correct mailto:", () => {
+  it("should render correct mailto", () => {
     //
   });
 
@@ -49,7 +49,7 @@ describe("<Footer /> component", () => {
     //
   });
 
-  it("should render correct github href:", () => {
+  it("should render correct github href", () => {
     //
   });
 
