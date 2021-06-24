@@ -2,7 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Liam Hockley`,
     author: {
-      name: `Liam Hockley`
+      name: `Liam Hockley`,
+      email: `contact@liamhockley.me`,
+      github: `https://github.com/xdega`,
     },
     description: `Thoughts and ideas from the mind of a JS and PHP expert`,
     siteUrl: `https://liamhockley.me`,

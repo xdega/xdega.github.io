@@ -6,9 +6,11 @@ const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
 useStaticQuery.mockImplementation(() => ({
   site: {
     siteMetadata: {
-      author: 'Liam Hockley',
-      description: 'My description',
-      title: 'My Title',
+      author: {
+        name: "Liam Hockley",
+        email: "contact@liamhockley.me",
+        github: "https://github.com/xdega",
+      },
     },
   },
 }));
@@ -18,20 +20,40 @@ describe("<Footer /> component", () => {
     jest.clearAllMocks();
   });
 
-  it("should render correctly", () =>{
+  it("should render correct author name", () => {
     const { site } = useStaticQuery(
       Gatsby.graphql`
         query {
           site {
             siteMetadata {
-              title
-              description
+              author {
+                name
+              }
             }
           }
         }
       `
     );
-  
-    console.log(site.siteMetadata.title);
+    //
   });
+
+  it("should display current year", () => {
+    //
+  });
+
+  it("should render correct mailto:", () => {
+    //
+  });
+
+  it("should render correct email text", () => {
+    //
+  });
+
+  it("should render correct github href:", () => {
+    //
+  });
+
+  it("should render correct github text", () => {
+    //
+  })
 });
