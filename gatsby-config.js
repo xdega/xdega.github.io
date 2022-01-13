@@ -123,7 +123,7 @@ module.exports = {
         short_name: `Liam Hockley`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#60a7f8`,
         display: `minimal-ui`,
         icon: `src/images/lh-logo.png`, // This path is relative to the root of the site.
       },

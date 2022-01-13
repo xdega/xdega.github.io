@@ -25,7 +25,7 @@ const Bio = () => {
         <p>
           My primary expertise includes modern PHP and JavaScript, along with 
           numerous tools and technologies that saturate the world of Web 
-          Development. I hope you find my nerdy musings insightful.
+          Development.
         </p>
       </div>
     </aside>
